@@ -1,0 +1,55 @@
+// swift-tools-version:5.3
+import PackageDescription
+let package = Package(
+    name: "ZendeskSDKAnalyticsKit",
+    platforms: [
+        .iOS(.v12)
+    ],
+    products: [
+        .library(
+            name: "ZendeskSDKAnalyticsKit",
+            targets: [
+                "ZendeskSDKAnalyticsKitTargets"
+            ]
+        )
+    ],
+    dependencies: [
+        .package(
+            name: "ZendeskSDKLogger",
+            url: "https://github.com/zendesk/sdk_logger_ios",
+            from: "0.11.0"
+        ),
+        .package(
+            name: "ZendeskSDKHTTPClient",
+            url: "https://github.com/zendesk/sdk_http_client_ios",
+            from: "0.20.0"
+        ),
+        .package(
+            name: "ZendeskSDKStorage",
+            url: "https://github.com/zendesk/sdk_storage_ios",
+            from: "1.4.0"
+        ),
+        .package(
+            name: "ZendeskSDKCoreUtilities",
+            url: "https://github.com/zendesk/sdk_core_utilities_ios",
+            from: "7.2.0"
+        )
+    ],
+    targets: [
+        .binaryTarget(
+            name: "ZendeskSDKAnalyticsKit",
+            path: "ZendeskSDKAnalyticsKit.xcframework"
+        ),
+        .target(
+            name: "ZendeskSDKAnalyticsKitTargets",
+            dependencies: [
+                .target(name: "ZendeskSDKAnalyticsKit"),
+                .product(name: "ZendeskSDKLogger", package: "ZendeskSDKLogger"),
+                .product(name: "ZendeskSDKHTTPClient", package: "ZendeskSDKHTTPClient"),
+                .product(name: "ZendeskSDKStorage", package: "ZendeskSDKStorage"),
+                .product(name: "ZendeskSDKCoreUtilities", package: "ZendeskSDKCoreUtilities")
+            ],
+            path: "Sources"
+        )
+    ]
+)

@@ -1,0 +1,2875 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ZendeskSDKAnalyticsKit",
+    "printedName": "ZendeskSDKAnalyticsKit",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ZendeskSDKStorage",
+        "printedName": "ZendeskSDKStorage",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EventParameters",
+        "printedName": "EventParameters",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(clientId:sdkVersion:isMultiConvoEnabled:isUserAuthenticated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EventParameters",
+                "printedName": "ZendeskSDKAnalyticsKit.EventParameters",
+                "usr": "s:22ZendeskSDKAnalyticsKit15EventParametersV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22ZendeskSDKAnalyticsKit15EventParametersV8clientId10sdkVersion19isMultiConvoEnabled0J17UserAuthenticatedACSS_SSS2btcfc",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit15EventParametersV8clientId10sdkVersion19isMultiConvoEnabled0J17UserAuthenticatedACSS_SSS2btcfc",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22ZendeskSDKAnalyticsKit15EventParametersV",
+        "mangledName": "$s22ZendeskSDKAnalyticsKit15EventParametersV",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ZendeskSDKHTTPClient",
+        "printedName": "ZendeskSDKHTTPClient",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnalyticsEvents",
+        "printedName": "AnalyticsEvents",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "events",
+            "printedName": "events",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ZendeskSDKAnalyticsKit.AnalyticsEventDTO]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnalyticsEventDTO",
+                    "printedName": "ZendeskSDKAnalyticsKit.AnalyticsEventDTO",
+                    "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit15AnalyticsEventsV6eventsSayAA0D8EventDTOVGvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit15AnalyticsEventsV6eventsSayAA0D8EventDTOVGvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[ZendeskSDKAnalyticsKit.AnalyticsEventDTO]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnalyticsEventDTO",
+                        "printedName": "ZendeskSDKAnalyticsKit.AnalyticsEventDTO",
+                        "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit15AnalyticsEventsV6eventsSayAA0D8EventDTOVGvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit15AnalyticsEventsV6eventsSayAA0D8EventDTOVGvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[ZendeskSDKAnalyticsKit.AnalyticsEventDTO]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnalyticsEventDTO",
+                        "printedName": "ZendeskSDKAnalyticsKit.AnalyticsEventDTO",
+                        "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit15AnalyticsEventsV6eventsSayAA0D8EventDTOVGvs",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit15AnalyticsEventsV6eventsSayAA0D8EventDTOVGvs",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit15AnalyticsEventsV6eventsSayAA0D8EventDTOVGvM",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit15AnalyticsEventsV6eventsSayAA0D8EventDTOVGvM",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsEvents",
+                "printedName": "ZendeskSDKAnalyticsKit.AnalyticsEvents",
+                "usr": "s:22ZendeskSDKAnalyticsKit15AnalyticsEventsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22ZendeskSDKAnalyticsKit15AnalyticsEventsV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit15AnalyticsEventsV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit15AnalyticsEventsV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit15AnalyticsEventsV6encode2toys7Encoder_p_tKF",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsEvents",
+                "printedName": "ZendeskSDKAnalyticsKit.AnalyticsEvents",
+                "usr": "s:22ZendeskSDKAnalyticsKit15AnalyticsEventsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsEvents",
+                "printedName": "ZendeskSDKAnalyticsKit.AnalyticsEvents",
+                "usr": "s:22ZendeskSDKAnalyticsKit15AnalyticsEventsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit15AnalyticsEventsV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit15AnalyticsEventsV2eeoiySbAC_ACtFZ",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22ZendeskSDKAnalyticsKit15AnalyticsEventsV",
+        "mangledName": "$s22ZendeskSDKAnalyticsKit15AnalyticsEventsV",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnalyticsEventDTO",
+        "printedName": "AnalyticsEventDTO",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "buid",
+            "printedName": "buid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4buidSSvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4buidSSvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4buidSSvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4buidSSvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uuid",
+            "printedName": "uuid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4uuidSSvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4uuidSSvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4uuidSSvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4uuidSSvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "channel",
+            "printedName": "channel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV7channelSSvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV7channelSSvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV7channelSSvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV7channelSSvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV7channelSSvs",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV7channelSSvs",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV7channelSSvM",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV7channelSSvM",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV7versionSSvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV7versionSSvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV7versionSSvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV7versionSSvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV9timestampSSvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV9timestampSSvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV9timestampSSvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV9timestampSSvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accept_language",
+            "printedName": "accept_language",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV15accept_languageSSvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV15accept_languageSSvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV15accept_languageSSvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV15accept_languageSSvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV15accept_languageSSvs",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV15accept_languageSSvs",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV15accept_languageSSvM",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV15accept_languageSSvM",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userAction",
+            "printedName": "userAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserAction",
+                "printedName": "ZendeskSDKAnalyticsKit.UserAction",
+                "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV10userActionAA04UserH0Vvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV10userActionAA04UserH0Vvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserAction",
+                    "printedName": "ZendeskSDKAnalyticsKit.UserAction",
+                    "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV10userActionAA04UserH0Vvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV10userActionAA04UserH0Vvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(eventType:eventParameters:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsEventDTO",
+                "printedName": "ZendeskSDKAnalyticsKit.AnalyticsEventDTO",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventType",
+                "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventParameters",
+                "printedName": "ZendeskSDKAnalyticsKit.EventParameters",
+                "usr": "s:22ZendeskSDKAnalyticsKit15EventParametersV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV9eventType0G10ParametersAcA0eH0O_AA0eI0Vtcfc",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV9eventType0G10ParametersAcA0eH0O_AA0eI0Vtcfc",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsEventDTO",
+                "printedName": "ZendeskSDKAnalyticsKit.AnalyticsEventDTO",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV6encode2toys7Encoder_p_tKF",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsEventDTO",
+                "printedName": "ZendeskSDKAnalyticsKit.AnalyticsEventDTO",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsEventDTO",
+                "printedName": "ZendeskSDKAnalyticsKit.AnalyticsEventDTO",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV2eeoiySbAC_ACtFZ",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV",
+        "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserAction",
+        "printedName": "UserAction",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "action",
+            "printedName": "action",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV6actionSSvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit10UserActionV6actionSSvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV6actionSSvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit10UserActionV6actionSSvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "label",
+            "printedName": "label",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV5labelSSvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit10UserActionV5labelSSvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV5labelSSvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit10UserActionV5labelSSvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "category",
+            "printedName": "category",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV8categorySSvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit10UserActionV8categorySSvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV8categorySSvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit10UserActionV8categorySSvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserMessagingDeviceData",
+                "printedName": "ZendeskSDKAnalyticsKit.UserMessagingDeviceData",
+                "usr": "s:22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV5valueAA0D19MessagingDeviceDataVvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit10UserActionV5valueAA0D19MessagingDeviceDataVvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserMessagingDeviceData",
+                    "printedName": "ZendeskSDKAnalyticsKit.UserMessagingDeviceData",
+                    "usr": "s:22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV5valueAA0D19MessagingDeviceDataVvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit10UserActionV5valueAA0D19MessagingDeviceDataVvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(eventType:eventParameters:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserAction",
+                "printedName": "ZendeskSDKAnalyticsKit.UserAction",
+                "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventType",
+                "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventParameters",
+                "printedName": "ZendeskSDKAnalyticsKit.EventParameters",
+                "usr": "s:22ZendeskSDKAnalyticsKit15EventParametersV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV9eventType0F10ParametersAcA05EventG0O_AA0iH0Vtcfc",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit10UserActionV9eventType0F10ParametersAcA05EventG0O_AA0iH0Vtcfc",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserAction",
+                "printedName": "ZendeskSDKAnalyticsKit.UserAction",
+                "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit10UserActionV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit10UserActionV6encode2toys7Encoder_p_tKF",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UserAction",
+                "printedName": "ZendeskSDKAnalyticsKit.UserAction",
+                "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UserAction",
+                "printedName": "ZendeskSDKAnalyticsKit.UserAction",
+                "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit10UserActionV2eeoiySbAC_ACtFZ",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22ZendeskSDKAnalyticsKit10UserActionV",
+        "mangledName": "$s22ZendeskSDKAnalyticsKit10UserActionV",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserMessagingDeviceData",
+        "printedName": "UserMessagingDeviceData",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(with:source:valueType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserMessagingDeviceData",
+                "printedName": "ZendeskSDKAnalyticsKit.UserMessagingDeviceData",
+                "usr": "s:22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventParameters",
+                "printedName": "ZendeskSDKAnalyticsKit.EventParameters",
+                "usr": "s:22ZendeskSDKAnalyticsKit15EventParametersV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV6create4with6source9valueTypeAcA15EventParametersV_S2StFZ",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV6create4with6source9valueTypeAcA15EventParametersV_S2StFZ",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserMessagingDeviceData",
+                "printedName": "ZendeskSDKAnalyticsKit.UserMessagingDeviceData",
+                "usr": "s:22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UserMessagingDeviceData",
+                "printedName": "ZendeskSDKAnalyticsKit.UserMessagingDeviceData",
+                "usr": "s:22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UserMessagingDeviceData",
+                "printedName": "ZendeskSDKAnalyticsKit.UserMessagingDeviceData",
+                "usr": "s:22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV2eeoiySbAC_ACtFZ",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV",
+        "mangledName": "$s22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EventType",
+        "printedName": "EventType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "openMessenger",
+            "printedName": "openMessenger",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDKAnalyticsKit.EventType.Type) -> ZendeskSDKAnalyticsKit.EventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                    "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDKAnalyticsKit.EventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                        "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO13openMessengeryA2CmF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO13openMessengeryA2CmF",
+            "moduleName": "ZendeskSDKAnalyticsKit"
+          },
+          {
+            "kind": "Var",
+            "name": "newConversationButtonTapped",
+            "printedName": "newConversationButtonTapped",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDKAnalyticsKit.EventType.Type) -> ZendeskSDKAnalyticsKit.EventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                    "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDKAnalyticsKit.EventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                        "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO27newConversationButtonTappedyA2CmF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO27newConversationButtonTappedyA2CmF",
+            "moduleName": "ZendeskSDKAnalyticsKit"
+          },
+          {
+            "kind": "Var",
+            "name": "conversationOpened",
+            "printedName": "conversationOpened",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDKAnalyticsKit.EventType.Type) -> ZendeskSDKAnalyticsKit.EventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                    "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDKAnalyticsKit.EventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                        "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO18conversationOpenedyA2CmF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO18conversationOpenedyA2CmF",
+            "moduleName": "ZendeskSDKAnalyticsKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventType",
+                "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventType",
+                "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO9hashValueSivp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO9hashValueSivp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO9hashValueSivg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO9hashValueSivg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO",
+        "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnalyticsSampling",
+        "printedName": "AnalyticsSampling",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "shouldTrackAnalyticEvents",
+            "printedName": "shouldTrackAnalyticEvents()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSamplingO25shouldTrackAnalyticEventsSbyFZ",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsSamplingO25shouldTrackAnalyticEventsSbyFZ",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSamplingO",
+        "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsSamplingO",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnalyticsKit",
+        "printedName": "AnalyticsKit",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "proceedEvent",
+            "printedName": "proceedEvent(eventType:eventParameters:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventType",
+                "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventParameters",
+                "printedName": "ZendeskSDKAnalyticsKit.EventParameters",
+                "usr": "s:22ZendeskSDKAnalyticsKit15EventParametersV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC0P12proceedEvent9eventType0G10ParametersyAA0fH0O_AA0fI0VtYaKF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC0P12proceedEvent9eventType0G10ParametersyAA0fH0O_AA0fI0VtYaKF",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZendeskSDKAnalyticsKit.AnalyticsKit>",
+            "sugared_genericSig": "<Self where Self : ZendeskSDKAnalyticsKit.AnalyticsKit>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableInternalAnalytics",
+            "printedName": "enableInternalAnalytics(enabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC0P014enableInternalD07enabledySb_tYaF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC0P014enableInternalD07enabledySb_tYaF",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZendeskSDKAnalyticsKit.AnalyticsKit>",
+            "sugared_genericSig": "<Self where Self : ZendeskSDKAnalyticsKit.AnalyticsKit>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isInternalAnalyticsEnabled",
+            "printedName": "isInternalAnalyticsEnabled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC0P010isInternalD7EnabledSbyYaF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC0P010isInternalD7EnabledSbyYaF",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZendeskSDKAnalyticsKit.AnalyticsKit>",
+            "sugared_genericSig": "<Self where Self : ZendeskSDKAnalyticsKit.AnalyticsKit>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC0P",
+        "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC0P",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnalyticsKitBuilder",
+        "printedName": "AnalyticsKitBuilder",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "build",
+            "printedName": "build(with:and:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsKit",
+                "printedName": "any ZendeskSDKAnalyticsKit.AnalyticsKit",
+                "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC0P"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsSettings",
+                "printedName": "ZendeskSDKAnalyticsKit.AnalyticsSettings",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSettingsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC7BuilderP5build4with3andAA0dC0_pAA0D8SettingsV_SStF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC7BuilderP5build4with3andAA0dC0_pAA0D8SettingsV_SStF",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : ZendeskSDKAnalyticsKit.AnalyticsKitBuilder>",
+            "sugared_genericSig": "<Self where Self : ZendeskSDKAnalyticsKit.AnalyticsKitBuilder>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC7BuilderP",
+        "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC7BuilderP",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DefaultAnalyticsKitBuilder",
+        "printedName": "DefaultAnalyticsKitBuilder",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DefaultAnalyticsKitBuilder",
+                "printedName": "ZendeskSDKAnalyticsKit.DefaultAnalyticsKitBuilder",
+                "usr": "s:22ZendeskSDKAnalyticsKit016DefaultAnalyticsC7BuilderC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22ZendeskSDKAnalyticsKit016DefaultAnalyticsC7BuilderCACycfc",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit016DefaultAnalyticsC7BuilderCACycfc",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "build",
+            "printedName": "build(with:and:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsKit",
+                "printedName": "any ZendeskSDKAnalyticsKit.AnalyticsKit",
+                "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC0P"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsSettings",
+                "printedName": "ZendeskSDKAnalyticsKit.AnalyticsSettings",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSettingsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit016DefaultAnalyticsC7BuilderC5build4with3andAA0eC0_pAA0E8SettingsV_SStF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit016DefaultAnalyticsC7BuilderC5build4with3andAA0eC0_pAA0E8SettingsV_SStF",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:22ZendeskSDKAnalyticsKit016DefaultAnalyticsC7BuilderC",
+        "mangledName": "$s22ZendeskSDKAnalyticsKit016DefaultAnalyticsC7BuilderC",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnalyticsKitBuilder",
+            "printedName": "AnalyticsKitBuilder",
+            "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC7BuilderP",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC7BuilderP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ZendeskSDKLogger",
+        "printedName": "ZendeskSDKLogger",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ZendeskSDKHTTPClient",
+        "printedName": "ZendeskSDKHTTPClient",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnalyticsKitError",
+        "printedName": "AnalyticsKitError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "networkError",
+            "printedName": "networkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDKAnalyticsKit.AnalyticsKitError.Type) -> ZendeskSDKAnalyticsKit.AnalyticsKitError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnalyticsKitError",
+                    "printedName": "ZendeskSDKAnalyticsKit.AnalyticsKitError",
+                    "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDKAnalyticsKit.AnalyticsKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnalyticsKitError",
+                        "printedName": "ZendeskSDKAnalyticsKit.AnalyticsKitError",
+                        "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO07networkE0yA2CmF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO07networkE0yA2CmF",
+            "moduleName": "ZendeskSDKAnalyticsKit"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidData",
+            "printedName": "invalidData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDKAnalyticsKit.AnalyticsKitError.Type) -> ZendeskSDKAnalyticsKit.AnalyticsKitError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnalyticsKitError",
+                    "printedName": "ZendeskSDKAnalyticsKit.AnalyticsKitError",
+                    "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDKAnalyticsKit.AnalyticsKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnalyticsKitError",
+                        "printedName": "ZendeskSDKAnalyticsKit.AnalyticsKitError",
+                        "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO11invalidDatayA2CmF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO11invalidDatayA2CmF",
+            "moduleName": "ZendeskSDKAnalyticsKit"
+          },
+          {
+            "kind": "Var",
+            "name": "tooManyRequests",
+            "printedName": "tooManyRequests",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDKAnalyticsKit.AnalyticsKitError.Type) -> ZendeskSDKAnalyticsKit.AnalyticsKitError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnalyticsKitError",
+                    "printedName": "ZendeskSDKAnalyticsKit.AnalyticsKitError",
+                    "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDKAnalyticsKit.AnalyticsKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnalyticsKitError",
+                        "printedName": "ZendeskSDKAnalyticsKit.AnalyticsKitError",
+                        "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO15tooManyRequestsyA2CmF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO15tooManyRequestsyA2CmF",
+            "moduleName": "ZendeskSDKAnalyticsKit"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO9hashValueSivp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO9hashValueSivp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO9hashValueSivg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO9hashValueSivg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsKitError",
+                "printedName": "ZendeskSDKAnalyticsKit.AnalyticsKitError",
+                "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsKitError",
+                "printedName": "ZendeskSDKAnalyticsKit.AnalyticsKitError",
+                "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO",
+        "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC5ErrorO",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomNSError",
+            "printedName": "CustomNSError",
+            "usr": "s:10Foundation13CustomNSErrorP",
+            "mangledName": "$s10Foundation13CustomNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnalyticsSettings",
+        "printedName": "AnalyticsSettings",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(endpointURL:clientId:threshold:shouldTrackAnalyticEvents:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsSettings",
+                "printedName": "ZendeskSDKAnalyticsKit.AnalyticsSettings",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSettingsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSettingsV11endpointURL8clientId9threshold25shouldTrackAnalyticEventsACSS_SSSiSbtcfc",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsSettingsV11endpointURL8clientId9threshold25shouldTrackAnalyticEventsACSS_SSSiSbtcfc",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "endpointURL",
+            "printedName": "endpointURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSettingsV11endpointURLSSvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsSettingsV11endpointURLSSvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSettingsV11endpointURLSSvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsSettingsV11endpointURLSSvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clientId",
+            "printedName": "clientId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSettingsV8clientIdSSvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsSettingsV8clientIdSSvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSettingsV8clientIdSSvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsSettingsV8clientIdSSvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "threshold",
+            "printedName": "threshold",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSettingsV9thresholdSivp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsSettingsV9thresholdSivp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSettingsV9thresholdSivg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsSettingsV9thresholdSivg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldTrackAnalyticEvents",
+            "printedName": "shouldTrackAnalyticEvents",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSettingsV25shouldTrackAnalyticEventsSbvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsSettingsV25shouldTrackAnalyticEventsSbvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSettingsV25shouldTrackAnalyticEventsSbvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsSettingsV25shouldTrackAnalyticEventsSbvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsSettingsV",
+        "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsSettingsV",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ZendeskSDKHTTPClient",
+        "printedName": "ZendeskSDKHTTPClient",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit"
+      },
+      {
+        "kind": "Import",
+        "name": "ZendeskSDKCoreUtilities",
+        "printedName": "ZendeskSDKCoreUtilities",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDKAnalyticsKit"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Internal\/Repository\/Local\/AnalyticsStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 1002,
+      "length": 19,
+      "value": "\"ANALYTICS_ENABLED\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Internal\/Repository\/Local\/AnalyticsStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 1425,
+      "length": 17,
+      "value": "\"ANALYTICS_EVENT\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 976,
+      "length": 11,
+      "value": "\"messaging\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 3938,
+      "length": 11,
+      "value": "\"OSVersion\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/AnalyticsSampling.swift",
+      "kind": "IntegerLiteral",
+      "offset": 849,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/AnalyticsSampling.swift",
+      "kind": "IntegerLiteral",
+      "offset": 980,
+      "length": 3,
+      "value": "463"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Internal\/Repository\/Remote\/CacheBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 746,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Internal\/Repository\/Remote\/CacheBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 750,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Internal\/Repository\/Remote\/CacheBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 757,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Internal\/Repository\/Remote\/CacheBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 777,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Internal\/Repository\/Remote\/CacheBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 782,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Internal\/Repository\/Remote\/CacheBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 789,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Internal\/Repository\/Remote\/CacheBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 805,
+      "length": 16,
+      "value": "\"analyticsCache\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/DefaultAnalyticsKit.swift",
+      "kind": "StringLiteral",
+      "offset": 3194,
+      "length": 26,
+      "value": "\"com.zendesk.analyticskit\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/DefaultAnalyticsKit.swift",
+      "kind": "StringLiteral",
+      "offset": 3258,
+      "length": 20,
+      "value": "\"INTERNAL_ANALYTICS\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Internal\/Repository\/Remote\/AnalyticsKitRestClient.swift",
+      "kind": "StringLiteral",
+      "offset": 951,
+      "length": 20,
+      "value": "\"\/frontendevents\/dl\""
+    }
+  ]
+}

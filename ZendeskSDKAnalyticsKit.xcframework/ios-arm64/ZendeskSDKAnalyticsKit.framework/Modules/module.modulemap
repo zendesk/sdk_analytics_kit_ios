@@ -1,0 +1,4 @@
+framework module ZendeskSDKAnalyticsKit {
+  header "ZendeskSDKAnalyticsKit-Swift.h"
+  requires objc
+}
