@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.swift_version = '5.3'
   s.cocoapods_version = '>= 1.10.0'
-  s.source       = { :git => "https://github.com/zendesk/sdk_analytics_kit_ios", :tag => s.version }
+  s.source       = { :git => "https://github.com/zendesk/sdk_analytics_kit_ios.git", :tag => s.version }
   s.vendored_frameworks = 'ZendeskSDKAnalyticsKit.xcframework'
   s.dependency 'ZendeskSDKLogger', '~> 0.11.0'
   s.dependency 'ZendeskSDKHTTPClient', '~> 0.20.0'
