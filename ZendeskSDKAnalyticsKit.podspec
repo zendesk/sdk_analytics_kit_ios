@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ZendeskSDKAnalyticsKit"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "ZendeskSDKAnalyticsKit #{s.version.to_s}"
   s.homepage     = "https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/ios/getting_started/"
   s.license      = {
@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'ZendeskSDKAnalyticsKit.xcframework'
   s.dependency 'ZendeskSDKLogger', '~> 0.11.0'
   s.dependency 'ZendeskSDKHTTPClient', '~> 0.20.0'
-  s.dependency 'ZendeskSDKStorage', '~> 1.4.0'
+  s.dependency 'ZendeskSDKStorage', '~> 1.5.0'
   s.dependency 'ZendeskSDKCoreUtilities', '~> 7.2.0'
 end

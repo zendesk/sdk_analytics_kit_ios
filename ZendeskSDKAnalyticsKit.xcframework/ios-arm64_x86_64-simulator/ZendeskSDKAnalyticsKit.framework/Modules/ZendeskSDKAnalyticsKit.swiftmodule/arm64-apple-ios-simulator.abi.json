@@ -49,7 +49,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(clientId:sdkVersion:isMultiConvoEnabled:isUserAuthenticated:)",
+            "printedName": "init(clientId:sdkVersion:isMultiConvoEnabled:isUserAuthenticated:suid:canUserSeeConversationList:canUserCreateMoreConversations:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -80,11 +80,29 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:22ZendeskSDKAnalyticsKit15EventParametersV8clientId10sdkVersion19isMultiConvoEnabled0J17UserAuthenticatedACSS_SSS2btcfc",
-            "mangledName": "$s22ZendeskSDKAnalyticsKit15EventParametersV8clientId10sdkVersion19isMultiConvoEnabled0J17UserAuthenticatedACSS_SSS2btcfc",
+            "usr": "s:22ZendeskSDKAnalyticsKit15EventParametersV8clientId10sdkVersion19isMultiConvoEnabled0J17UserAuthenticated4suid03canN19SeeConversationList0qN23CreateMoreConversationsACSS_SSS2bSSS2btcfc",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit15EventParametersV8clientId10sdkVersion19isMultiConvoEnabled0J17UserAuthenticated4suid03canN19SeeConversationList0qN23CreateMoreConversationsACSS_SSS2bSSS2btcfc",
             "moduleName": "ZendeskSDKAnalyticsKit",
             "declAttributes": [
               "AccessControl"
@@ -509,6 +527,51 @@
                 "declKind": "Accessor",
                 "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4uuidSSvg",
                 "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4uuidSSvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "suid",
+            "printedName": "suid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4suidSSvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4suidSSvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4suidSSvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit17AnalyticsEventDTOV4suidSSvg",
                 "moduleName": "ZendeskSDKAnalyticsKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1342,7 +1405,7 @@
           {
             "kind": "Function",
             "name": "create",
-            "printedName": "create(with:source:valueType:)",
+            "printedName": "create(with:source:valueType:exitAction:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1367,11 +1430,18 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV6create4with6source9valueTypeAcA15EventParametersV_S2StFZ",
-            "mangledName": "$s22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV6create4with6source9valueTypeAcA15EventParametersV_S2StFZ",
+            "usr": "s:22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV6create4with6source9valueType10exitActionAcA15EventParametersV_S3StFZ",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit23UserMessagingDeviceDataV6create4with6source9valueType10exitActionAcA15EventParametersV_S3StFZ",
             "moduleName": "ZendeskSDKAnalyticsKit",
             "static": true,
             "declAttributes": [
@@ -1625,100 +1695,147 @@
             "moduleName": "ZendeskSDKAnalyticsKit"
           },
           {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "EventType",
-                "printedName": "ZendeskSDKAnalyticsKit.EventType",
-                "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "EventType",
-                "printedName": "ZendeskSDKAnalyticsKit.EventType",
-                "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO2eeoiySbAC_ACtFZ",
-            "moduleName": "ZendeskSDKAnalyticsKit",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
+            "name": "firstUserMessageSentInputField",
+            "printedName": "firstUserMessageSentInputField",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO9hashValueSivp",
-            "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO9hashValueSivp",
-            "moduleName": "ZendeskSDKAnalyticsKit",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDKAnalyticsKit.EventType.Type) -> ZendeskSDKAnalyticsKit.EventType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "EventType",
+                    "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                    "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDKAnalyticsKit.EventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                        "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+                      }
+                    ]
                   }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO9hashValueSivg",
-                "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO9hashValueSivg",
-                "moduleName": "ZendeskSDKAnalyticsKit",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
+                ]
               }
             ],
-            "declKind": "Func",
-            "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO4hash4intoys6HasherVz_tF",
-            "moduleName": "ZendeskSDKAnalyticsKit",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
+            "declKind": "EnumElement",
+            "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO30firstUserMessageSentInputFieldyA2CmF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO30firstUserMessageSentInputFieldyA2CmF",
+            "moduleName": "ZendeskSDKAnalyticsKit"
+          },
+          {
+            "kind": "Var",
+            "name": "firstUserMessageSentQuickReply",
+            "printedName": "firstUserMessageSentQuickReply",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDKAnalyticsKit.EventType.Type) -> ZendeskSDKAnalyticsKit.EventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                    "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDKAnalyticsKit.EventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                        "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO30firstUserMessageSentQuickReplyyA2CmF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO30firstUserMessageSentQuickReplyyA2CmF",
+            "moduleName": "ZendeskSDKAnalyticsKit"
+          },
+          {
+            "kind": "Var",
+            "name": "showMessagingAPI",
+            "printedName": "showMessagingAPI",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDKAnalyticsKit.EventType.Type) -> (Swift.String, Swift.String, Swift.String) -> ZendeskSDKAnalyticsKit.EventType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String, Swift.String) -> ZendeskSDKAnalyticsKit.EventType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                        "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(showMessagingAction: Swift.String, showMessagingLabel: Swift.String, showMessagingExitAction: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDKAnalyticsKit.EventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "ZendeskSDKAnalyticsKit.EventType",
+                        "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO16showMessagingAPIyACSS_S2StcACmF",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO16showMessagingAPIyACSS_S2StcACmF",
+            "moduleName": "ZendeskSDKAnalyticsKit"
           }
         ],
         "declKind": "Enum",
@@ -1742,20 +1859,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
           }
         ]
       },
@@ -1868,6 +1971,51 @@
         "name": "AnalyticsKit",
         "printedName": "AnalyticsKit",
         "children": [
+          {
+            "kind": "Var",
+            "name": "sessionId",
+            "printedName": "sessionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC0P9sessionIdSSvp",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC0P9sessionIdSSvp",
+            "moduleName": "ZendeskSDKAnalyticsKit",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22ZendeskSDKAnalyticsKit09AnalyticsC0P9sessionIdSSvg",
+                "mangledName": "$s22ZendeskSDKAnalyticsKit09AnalyticsC0P9sessionIdSSvg",
+                "moduleName": "ZendeskSDKAnalyticsKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : ZendeskSDKAnalyticsKit.AnalyticsKit>",
+                "sugared_genericSig": "<Self where Self : ZendeskSDKAnalyticsKit.AnalyticsKit>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Function",
             "name": "proceedEvent",
@@ -2776,16 +2924,30 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
       "kind": "StringLiteral",
-      "offset": 976,
+      "offset": 1090,
       "length": 11,
       "value": "\"messaging\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
       "kind": "StringLiteral",
-      "offset": 3938,
+      "offset": 3981,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 4752,
       "length": 11,
       "value": "\"OSVersion\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 5140,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/AnalyticsSampling.swift",
@@ -2853,14 +3015,14 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/DefaultAnalyticsKit.swift",
       "kind": "StringLiteral",
-      "offset": 3194,
+      "offset": 3448,
       "length": 26,
       "value": "\"com.zendesk.analyticskit\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/DefaultAnalyticsKit.swift",
       "kind": "StringLiteral",
-      "offset": 3258,
+      "offset": 3512,
       "length": 20,
       "value": "\"INTERNAL_ANALYTICS\""
     },
