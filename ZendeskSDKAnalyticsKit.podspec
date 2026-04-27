@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ZendeskSDKAnalyticsKit"
-  s.version      = "0.3.0"
+  s.version      = "0.3.1"
   s.summary      = "ZendeskSDKAnalyticsKit #{s.version.to_s}"
   s.homepage     = "https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/ios/getting_started/"
   s.license      = {
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/zendesk/sdk_analytics_kit_ios.git", :tag => s.version }
   s.vendored_frameworks = 'ZendeskSDKAnalyticsKit.xcframework'
   s.dependency 'ZendeskSDKLogger', '~> 0.11.0'
-  s.dependency 'ZendeskSDKHTTPClient', '~> 0.20.0'
+  s.dependency 'ZendeskSDKHTTPClient', '~> 0.20.1'
   s.dependency 'ZendeskSDKStorage', '~> 1.5.0'
   s.dependency 'ZendeskSDKCoreUtilities', '~> 8.0.0'
 end
