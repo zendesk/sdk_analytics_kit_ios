@@ -49,7 +49,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(clientId:sdkVersion:isMultiConvoEnabled:isUserAuthenticated:suid:canUserSeeConversationList:canUserCreateMoreConversations:senderType:)",
+            "printedName": "init(clientId:sdkVersion:isMultiConvoEnabled:isUserAuthenticated:suid:canUserSeeConversationList:canUserCreateMoreConversations:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -98,17 +98,11 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:22ZendeskSDKAnalyticsKit15EventParametersV8clientId10sdkVersion19isMultiConvoEnabled0J17UserAuthenticated4suid03canN19SeeConversationList0qN23CreateMoreConversations10senderTypeACSS_SSS2bSSS2bSStcfc",
-            "mangledName": "$s22ZendeskSDKAnalyticsKit15EventParametersV8clientId10sdkVersion19isMultiConvoEnabled0J17UserAuthenticated4suid03canN19SeeConversationList0qN23CreateMoreConversations10senderTypeACSS_SSS2bSSS2bSStcfc",
+            "usr": "s:22ZendeskSDKAnalyticsKit15EventParametersV8clientId10sdkVersion19isMultiConvoEnabled0J17UserAuthenticated4suid03canN19SeeConversationList0qN23CreateMoreConversationsACSS_SSS2bSSS2btcfc",
+            "mangledName": "$s22ZendeskSDKAnalyticsKit15EventParametersV8clientId10sdkVersion19isMultiConvoEnabled0J17UserAuthenticated4suid03canN19SeeConversationList0qN23CreateMoreConversationsACSS_SSS2bSSS2btcfc",
             "moduleName": "ZendeskSDKAnalyticsKit",
             "declAttributes": [
               "AccessControl"
@@ -2062,80 +2056,6 @@
             "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO30conversationExtensionDisplayedyACSS_SStcACmF",
             "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO30conversationExtensionDisplayedyACSS_SStcACmF",
             "moduleName": "ZendeskSDKAnalyticsKit"
-          },
-          {
-            "kind": "Var",
-            "name": "replySent",
-            "printedName": "replySent",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(ZendeskSDKAnalyticsKit.EventType.Type) -> ZendeskSDKAnalyticsKit.EventType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EventType",
-                    "printedName": "ZendeskSDKAnalyticsKit.EventType",
-                    "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "ZendeskSDKAnalyticsKit.EventType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EventType",
-                        "printedName": "ZendeskSDKAnalyticsKit.EventType",
-                        "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO9replySentyA2CmF",
-            "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO9replySentyA2CmF",
-            "moduleName": "ZendeskSDKAnalyticsKit"
-          },
-          {
-            "kind": "Var",
-            "name": "guideArticleClicked",
-            "printedName": "guideArticleClicked",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(ZendeskSDKAnalyticsKit.EventType.Type) -> ZendeskSDKAnalyticsKit.EventType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EventType",
-                    "printedName": "ZendeskSDKAnalyticsKit.EventType",
-                    "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "ZendeskSDKAnalyticsKit.EventType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EventType",
-                        "printedName": "ZendeskSDKAnalyticsKit.EventType",
-                        "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:22ZendeskSDKAnalyticsKit9EventTypeO19guideArticleClickedyA2CmF",
-            "mangledName": "$s22ZendeskSDKAnalyticsKit9EventTypeO19guideArticleClickedyA2CmF",
-            "moduleName": "ZendeskSDKAnalyticsKit"
           }
         ],
         "declKind": "Enum",
@@ -2905,13 +2825,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -3238,63 +3151,56 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
       "kind": "StringLiteral",
-      "offset": 4408,
+      "offset": 4328,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
       "kind": "StringLiteral",
-      "offset": 4529,
+      "offset": 4449,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
       "kind": "StringLiteral",
-      "offset": 4556,
+      "offset": 4476,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
       "kind": "StringLiteral",
-      "offset": 4589,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 5371,
+      "offset": 5221,
       "length": 11,
       "value": "\"OSVersion\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
       "kind": "StringLiteral",
-      "offset": 5825,
+      "offset": 5651,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
       "kind": "StringLiteral",
-      "offset": 6132,
+      "offset": 5958,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
       "kind": "StringLiteral",
-      "offset": 6165,
+      "offset": 5991,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/AnalyticsKit\/AnalyticsKit\/Source\/Public\/Models\/AnalyticsEvents.swift",
       "kind": "StringLiteral",
-      "offset": 6192,
+      "offset": 6018,
       "length": 2,
       "value": "\"\""
     },
